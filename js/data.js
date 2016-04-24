@@ -2,7 +2,7 @@ var startingLocation = "Trump+Tower"
 
 var fourSeasons = {
   name: "Four Seasons",
-  rating: "4.6 Stars",
+  rating: "img/Star4.png",
   address: "E 52nd St",
   category: "American",
   image: "http://fourseasonsrestaurant.com/images/index/Four%20Seasons%20PDR1.jpg",
@@ -14,7 +14,7 @@ var fourSeasons = {
 
 var theModern = {
   name: "The Modern",
-  rating: "4.4 Stars",
+  rating: "img/Star5.png",
   category: "American",
   address: "W 53 St.",
   image: "http://nyjournal.squarespace.com/storage/modern.jpg",
@@ -26,7 +26,7 @@ var theModern = {
 
 var laGrenouille = {
   name: "La Grenouille",
-  rating: "4.6 Stars",
+  rating: "img/Star3.png",
   category: "French",
   address: "3 E 52nd St, New York, NY 10022",
   image: "https://i.ytimg.com/vi/Ah7h2mJwTOg/hqdefault.jpg",
@@ -38,7 +38,7 @@ var laGrenouille = {
 
 var leCirque = {
   name: "Le Cirque",
-  rating: "4.2 Stars",
+  rating: "img/Star5.png",
   category: "French",
   address: "151 E 58th St, New York, NY 10022",
   image: "http://assets.nydailynews.com/polopoly_fs/1.368567!/img/httpImage/image.jpg",
@@ -48,7 +48,7 @@ var leCirque = {
 }
 
 var felidia = {
-  name: "Felidia",
+  name: "img/Star1.png",
   rating: "4.1 Stars",
   category: "Italian",
   address: "243 E 58th St, New York, NY 10022",
