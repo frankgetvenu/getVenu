@@ -1,0 +1,75 @@
+/*********************
+  Index
+**********************/
+
+h1 {
+  text-align: center;
+}
+p.Logo {
+ text-allign:center;
+  image-size: 4vh;
+}
+img {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 20px;
+}
+img.VenuLogo {
+  width: 150%;
+  max-width: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.logins {
+  padding-top: 100px;
+}
+
+#google {
+  background: red;
+  color: white
+}
+
+#facebook {
+  background: blue;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none
+}
+
+/*********************
+  Categories
+**********************/
+
+.categories {
+  height: 100vh;
+}
+
+.category {
+  background-color:rgba(48,180,75,1.0);;
+  margin: 0 10px;
+  height: 20vh;
+}
+
+.category h2 {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+  margin-bottom: -5px;
+}
+
+.category img {
+  width: 50px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.category p {
+  text-align: center;
+}
+
+/*********************
+  Food
+**********************/
