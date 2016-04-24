@@ -43,12 +43,30 @@
       }
 
       function callback(results, status) {
+        console.log(results)
         if (status === google.maps.places.PlacesServiceStatus.OK) {
-          for (var i = 0; i < results.length; i++) {
-            createMarker(results[i]);
-          }
+          //for (var i = 0; i < results.length; i++) {
+            //createMarker(results[i]);
+          //}
+               var request = {
+                placeId: 'ChIJoWRiMTGuEmsRtqLv5hQCVqc'
+              };
+
+              service = new google.maps.places.PlacesService(map);
+              service.getDetails(request, newcallback)
+
+
         }
       }
+
+      function newcallback(place, status) {
+        console.log(place)
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+        createMarker(place);
+      }
+}
+
+
 
       function createMarker(place) {
         var placeLoc = place.geometry.location;
@@ -68,7 +86,7 @@
     <div id="map"></div>
 
   <input id="testbutton" type="button" value="GET ALL Restaurants " />
-  <p id="results">Your Result Will Display Here: </p>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&libraries=places&callback=initMap" async defer></script>
 
   </body>
