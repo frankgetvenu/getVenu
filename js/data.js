@@ -80,6 +80,7 @@ $(document).ready(function(){
   $(".category").text("Category: " + biz.category)
   $(".price").text("Price: " + biz.price )
   $(".distance").text(biz.distance)
+  $('#rating').attr('src', biz.rating)
 })
 
 // function createMap(location) {
