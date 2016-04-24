@@ -1,2 +1,0 @@
-# getVenu
-GetVenu project
