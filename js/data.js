@@ -72,24 +72,36 @@ function shuffle(a) {
     }
 }
 
+var index = 0
 $(document).ready(function(){
-  var biz = locations[0]
+  displayBiz()
 
-  $(".name").text("Name: " + biz.name)
-  $("#image").attr('src', biz.image)
-  $(".category").text("Category: " + biz.category)
-  $(".price").text("Price: " + biz.price )
-  $(".distance").text(biz.distance)
-  $('#rating').attr('src', biz.rating)
+  function displayBiz() {
+    var biz = locations[index]
+
+    $(".name").text("Name: " + biz.name)
+    $("#image").attr('src', biz.image)
+    $(".category").text("Category: " + biz.category)
+    $(".price").text("Price: " + biz.price )
+    $(".distance").text(biz.distance)
+    $('#rating').attr('src', biz.rating)
+  }
 
   $('.flip3D').mouseenter(function(){
-    $('.BackImage').attr('src', biz.mapEmbed)
+    $('.BackImage').attr('src', locations[index].mapEmbed)
     $('.BackImage').show()
   })
 
   $('.flip3D').mouseout(function(){
     $('.BackImage').attr('src', '#')
     $('.BackImage').hide()
+  })
+
+  $('#dislike').on('click', function(e){
+    e.preventDefault();
+    index++
+    // if(index > locations.length)
+    displayBiz();
   })
 
 })
