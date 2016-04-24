@@ -81,6 +81,17 @@ $(document).ready(function(){
   $(".price").text("Price: " + biz.price )
   $(".distance").text(biz.distance)
   $('#rating').attr('src', biz.rating)
+
+  $('.flip3D').mouseenter(function(){
+    $('.BackImage').attr('src', biz.mapEmbed)
+    $('.BackImage').show()
+  })
+
+  $('.flip3D').mouseout(function(){
+    $('.BackImage').attr('src', '#')
+    $('.BackImage').hide()
+  })
+
 })
 
 // function createMap(location) {
