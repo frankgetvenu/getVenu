@@ -48,8 +48,8 @@ var leCirque = {
 }
 
 var felidia = {
-  name: "img/Star1.png",
-  rating: "4.1 Stars",
+  name: "Felidia",
+  rating: "img/Star1.png",
   category: "Italian",
   address: "243 E 58th St, New York, NY 10022",
   image: "http://assets.nydailynews.com/polopoly_fs/1.368567!/img/httpImage/image.jpg",
