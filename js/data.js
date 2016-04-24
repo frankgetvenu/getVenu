@@ -89,7 +89,8 @@ $(document).ready(function(){
 
   $('.flip3D').mouseenter(function(){
     $('.BackImage').attr('src', locations[index].mapEmbed)
-    $('.BackImage').show()
+    $('.BackImage').show();
+
   })
 
   $('.flip3D').mouseout(function(){
@@ -98,9 +99,8 @@ $(document).ready(function(){
   })
 
   $('#dislike').on('click', function(e){
-    e.preventDefault();
     index++
-    // if(index > locations.length)
+    if(index === locations.length) { index = 0}
     displayBiz();
   })
 

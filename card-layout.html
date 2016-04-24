@@ -28,6 +28,13 @@
 .BackImage {
 	display: none;
 }
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
 </style>
 <title>GetVenu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,34 +70,33 @@
 		</div>
 	</div>
 	<div style="width:100%" style="text-align:center">
-
-			<button class="w3-btn w3-white" style="float:left;width:30%"><img src="img/not_ok_mark_clip_art_9056.png" style="width:50%"></button>
-			<button class="w3-btn w3-white" style="float:right;width:30%"><img src="img/Check Mark.png" style="width:50%"></button>
-
 	</div>
 </div>
 
 
 	<div class="w3-card-12 back" style="width:100%">
-		<header class="w3-container w3-green">
+		<header class="w3-container w3-green hide-map">
 		  	<h1>Food & Drink</h1>
 		</header>
 	  	<iframe class="BackImage" alt="Map" width="100%"
 	  	 src= '#'
 	  	>
 	  	</iframe>
-	  	<footer class="w3-container w3-green">
+	  	<footer class="w3-container w3-green hide-map">
 		  	<div >
 		  		<h5 class="category" style="float:left">Category:</h5>
 		  		<h5 class="distance" style="float:right">Distance:</h5><br>
 		  	</div>
 		</footer>
-		<div class="w3-container" style="text-align:center">
+		<div class="w3-container hide-map" style="text-align:center">
 			<p class="description">Here is a discription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 		</div>
 	</div>
 </div>
-
+<div class="buttons">
+			<button id="dislike" class="w3-btn w3-white" style="float:left;width:30%"><img src="img/not_ok_mark_clip_art_9056.png" style="width:50%"></button>
+			<button class="w3-btn w3-white" style="float:right;width:30%"><img src="img/Check Mark.png" style="width:50%"></button>
+		</div>
 </body>
 </html>
