@@ -3,12 +3,12 @@ var startingLocation = "Trump+Tower"
 var fourSeasons = {
   name: "Four Seasons",
   rating: "img/Star4.png",
-  address: "E 52nd St",
+  address: "99 E 52nd St, New York, NY 10022",
   category: "American",
   image: "http://fourseasonsrestaurant.com/images/index/Four%20Seasons%20PDR1.jpg",
   phone: "212-754-9494",
   distance: "0.4 mile",
-  mapEmbed: "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&origin=Trump+Tower&destination=Four+Seasons",
+  mapEmbed: "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&origin=Trump+Tower&destination=99+E+52nd+St+New+York+NY+10022",
   price: "$$$$"
  }
 
@@ -20,7 +20,7 @@ var theModern = {
   image: "http://nyjournal.squarespace.com/storage/modern.jpg",
   phone: "212-333-1220",
   distance: "0.3 mile",
-   mapEmbed: "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&origin=Trump+Tower&destination=the+modern",
+   mapEmbed: "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&origin=Trump+Tower&destination=9+W+53rd+St+New+York+NY+10019",
    price: "$$$"
 }
 
@@ -32,7 +32,7 @@ var laGrenouille = {
   image: "https://i.ytimg.com/vi/Ah7h2mJwTOg/hqdefault.jpg",
   phone: "212-752-1495",
   distance: "0.2 mile",
-  mapEmbed: "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&origin=Trump+Tower&destination=La+Grenouille",
+  mapEmbed: "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCBR22ALksTJlfUqgBbiblbe0koi2l6d44&origin=Trump+Tower&destination=3+E+52nd+St+New York+NY+10022",
   price: "$$$$"
 }
 
@@ -58,7 +58,7 @@ var felidia = {
   price: "$$$$$"
 }
 
-var locations = [felidia, leCirque, laGrenouille, theModern, fourSeasons]
+var locations = [leCirque, felidia,laGrenouille, theModern, fourSeasons]
 
 shuffle(locations)
 
